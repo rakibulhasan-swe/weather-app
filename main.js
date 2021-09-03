@@ -19,11 +19,13 @@ const setSearchedValue = (id, city) =>{
 }
 
 const displayTemperature = (details) =>{
+    console.log(details);
+    //clear input value
     inputValue.value = '';
     // set dynamic icon
     const iconUrl = ` http://openweathermap.org/img/wn/${details.weather[0].icon}@2x.png`;
     imgIcon.setAttribute('src', iconUrl);
-
+    //calling another function for displaying data
     setSearchedValue('city', details.name);
     setSearchedValue('temperature', details.main.temp);
     setSearchedValue('temp-min', details.main.temp_min);
