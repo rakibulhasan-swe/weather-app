@@ -19,7 +19,6 @@ const setSearchedValue = (id, city) =>{
 }
 
 const displayTemperature = (details) =>{
-    console.log(details);
     //clear input value
     inputValue.value = '';
     // set dynamic icon
